@@ -1,0 +1,8 @@
+<h3> <%=  @shopping_item.name %> </h3>
+<p> Preço: <%=  @shopping_item.price %> </p>
+<p> <%=  @shopping_item.description %> </p>
+<% if @shopping_item.acquired == true %>
+  <p> Comprado </p>
+<% else %>
+  <p> Não comprado </p>
+<% end  %>

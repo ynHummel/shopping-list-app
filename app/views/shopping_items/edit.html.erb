@@ -1,0 +1,21 @@
+<h2> Modificar item </h2>
+
+<%= form_with model: @shopping_item do |form| %>
+  <div>
+  <%= form.label :name, 'Nome:' %>
+  <%= form.text_field :name %>
+  </div>
+  <div>
+  <%= form.label :price, 'Preço: ' %>
+  <%= form.number_field :price, step: 0.01 %>
+  </div>
+  <div>
+  <%= form.label :description, 'Descrição:' %>
+  <%= form.text_area :description %>
+  </div>
+  <div>
+  <%= form.label :acquired, 'Comprado?' %>
+  <%= form.check_box :acquired %>
+  </div>
+  <%= form.submit 'Editar' %>
+<% end %>
