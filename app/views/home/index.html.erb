@@ -4,13 +4,15 @@
 
 <h3>Próximas compras: </h3>
 <% @items.each do |item|%>
-  <p> 
-    <%= link_to "#{item.name}", shopping_item_path(item) %> - 
+<dl>
+  <dt>
+    <%= link_to item.name, shopping_item_path(item) %> - 
     R$ <%= item.price %>
     <%= link_to 'Editar', edit_shopping_item_path(item)%> |
-  <%= link_to 'Apagar', shopping_item_path(item), method: :delete, data: {confirm: 'Quer realmente apagar?'} %>  
-  </p>
-  <p class='descr'> - <%= item.description %> </p>
+    <%= link_to 'Apagar', shopping_item_path(item), method: :delete, data: {confirm: 'Quer realmente apagar?'} %>
+  </dt>
+  <dd><%= item.description %></dd>
+</dl>
 <% end %>
 
  <%# <h3>Itens comprados: </h3> %>

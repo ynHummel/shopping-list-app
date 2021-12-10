@@ -1,24 +1,7 @@
-# README
+# Lista de compras feita em rails
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Podemos registrar um item novo na lista, edita-lo, mudar seu status de não-adquirido para adquirido e deletar.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+TODO:
+- Criar uma lista separada para itens já comprados.
+- Estilizar
